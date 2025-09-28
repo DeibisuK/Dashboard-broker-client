@@ -1,0 +1,12 @@
+{
+    "name": "Dashboard-Broker-Client",
+    "description": "Creando un dashboard usando broker y clientes",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "dashboard-jcruz.json",
+            "credentialsFile": "dashboard-jcruz_cred.json"
+        }
+    }
+}
