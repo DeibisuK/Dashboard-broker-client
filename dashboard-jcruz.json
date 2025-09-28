@@ -8,30 +8,38 @@
         "env": []
     },
     {
-        "id": "a22bd8dc758a1898",
-        "type": "inject",
+        "id": "7c5a433230f1c8d0",
+        "type": "mqtt in",
         "z": "4571324456ea2a51",
         "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 420,
-        "y": 160,
+        "qos": "2",
+        "datatype": "auto-detect",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 290,
+        "y": 200,
         "wires": [
             []
         ]
+    },
+    {
+        "id": "e538aa10e75f54cf",
+        "type": "mqtt out",
+        "z": "4571324456ea2a51",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "x": 610,
+        "y": 200,
+        "wires": []
     }
 ]
