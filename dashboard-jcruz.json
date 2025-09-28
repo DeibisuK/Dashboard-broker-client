@@ -43,5 +43,18 @@
         "x": 590,
         "y": 160,
         "wires": []
+    },
+    {
+        "id": "c82e74011fc24e86",
+        "type": "catch",
+        "z": "4571324456ea2a51",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 520,
+        "y": 340,
+        "wires": [
+            []
+        ]
     }
 ]
