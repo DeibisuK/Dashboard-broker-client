@@ -383,7 +383,8 @@
         "y": 80,
         "wires": [
             [
-                "a13f83267f08150b"
+                "a13f83267f08150b",
+                "137c88614269d155"
             ]
         ]
     },
@@ -401,8 +402,24 @@
         "correl": "",
         "expiry": "",
         "broker": "9682b326129ee7e2",
-        "x": 970,
-        "y": 80,
+        "x": 950,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "137c88614269d155",
+        "type": "debug",
+        "z": "4571324456ea2a51",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 60,
         "wires": []
     }
 ]
