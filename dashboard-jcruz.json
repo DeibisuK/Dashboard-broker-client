@@ -264,11 +264,12 @@
         "offvalueType": "bool",
         "officon": "",
         "offcolor": "",
-        "x": 330,
-        "y": 320,
+        "x": 610,
+        "y": 220,
         "wires": [
             [
-                "7af4b5b787f45efd"
+                "7af4b5b787f45efd",
+                "f0aea96056eda343"
             ]
         ]
     },
@@ -276,23 +277,24 @@
         "id": "7af4b5b787f45efd",
         "type": "ui-led",
         "z": "4571324456ea2a51",
-        "name": "",
+        "name": "led",
+        "group": "293f331604d8fd67",
         "order": -1,
         "width": 0,
         "height": 0,
-        "label": "",
+        "label": "LED",
         "labelPlacement": "left",
         "labelAlignment": "left",
         "states": [
             {
-                "color": "#FF0000",
-                "value": false,
-                "valueType": "bool"
+                "value": "false",
+                "valueType": "bool",
+                "color": "#ff0000"
             },
             {
-                "color": "#00FF00",
-                "value": true,
-                "valueType": "bool"
+                "value": "true",
+                "valueType": "bool",
+                "color": "#00ff00"
             }
         ],
         "allowColorForValueInMessage": false,
