@@ -421,5 +421,34 @@
         "x": 1020,
         "y": 60,
         "wires": []
+    },
+    {
+        "id": "6dcc46717eb18e4d",
+        "type": "inject",
+        "z": "4571324456ea2a51",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "dashboard",
+        "payload": "{}",
+        "payloadType": "json",
+        "x": 730,
+        "y": 280,
+        "wires": [
+            [
+                "a13f83267f08150b"
+            ]
+        ]
     }
 ]
