@@ -348,7 +348,7 @@
         "type": "function",
         "z": "4571324456ea2a51",
         "name": "function 1",
-        "func": "var a = msg.led;\nmsg.dashboard = {\n    temp: msg.temp,\n    hum: msg.hum,\n    led: a\n};\n\nreturn msg;",
+        "func": "var a = msg.led;\nmsg.payload = {\n    temp: msg.temp,\n    hum: msg.hum,\n    led: a\n};\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
