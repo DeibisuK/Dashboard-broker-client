@@ -191,8 +191,8 @@
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 190,
-        "y": 280,
+        "x": 170,
+        "y": 240,
         "wires": [
             [
                 "5962800357fe7a07",
@@ -248,8 +248,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 400,
-        "y": 360,
+        "x": 460,
+        "y": 320,
         "wires": [
             [
                 "06f704519b1fe2f4"
@@ -264,7 +264,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "we",
+                "p": "payload",
                 "pt": "msg",
                 "to": "req.params.hum",
                 "tot": "msg"
@@ -275,7 +275,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 370,
+        "x": 380,
         "y": 420,
         "wires": [
             [
@@ -344,7 +344,7 @@
         "name": "hum",
         "group": "293f331604d8fd67",
         "order": 1,
-        "value": "we",
+        "value": "payload",
         "valueType": "msg",
         "width": 3,
         "height": 3,
