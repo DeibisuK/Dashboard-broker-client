@@ -472,6 +472,9 @@
                 "7af4b5b787f45efd",
                 "f0aea96056eda343"
             ]
+        ],
+        "outputLabels": [
+            "led"
         ]
     },
     {
