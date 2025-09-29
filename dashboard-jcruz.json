@@ -526,11 +526,12 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 560,
-        "y": 320,
+        "x": 600,
+        "y": 160,
         "wires": []
     }
 ]
