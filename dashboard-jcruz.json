@@ -630,7 +630,7 @@
                 "p": "we",
                 "pt": "msg",
                 "to": "req.params.hum",
-                "tot": "str"
+                "tot": "msg"
             }
         ],
         "action": "",
