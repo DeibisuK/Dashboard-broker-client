@@ -101,7 +101,7 @@
         "type": "mqtt-broker",
         "name": "LocalHost",
         "broker": "127.0.0.1",
-        "port": 1883,
+        "port": "1884",
         "clientid": "",
         "autoConnect": true,
         "usetls": false,
@@ -421,34 +421,5 @@
         "x": 1020,
         "y": 60,
         "wires": []
-    },
-    {
-        "id": "6dcc46717eb18e4d",
-        "type": "inject",
-        "z": "4571324456ea2a51",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "dashboard",
-        "payload": "{\"a\":1}",
-        "payloadType": "json",
-        "x": 740,
-        "y": 280,
-        "wires": [
-            [
-                "a13f83267f08150b"
-            ]
-        ]
     }
 ]
