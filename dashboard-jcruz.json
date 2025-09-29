@@ -415,7 +415,7 @@
         "low": "0",
         "high": "100",
         "inte": "false",
-        "property": "randomTemp",
+        "property": "random",
         "x": 320,
         "y": 140,
         "wires": [
@@ -429,7 +429,7 @@
         "type": "function",
         "z": "097713a283a7245f",
         "name": "function 1",
-        "func": "msg.url = \"http://127.0.0.1:1880/sensores/\" + msg.randomTemp +\"/\" + msg.randomHum;\nreturn msg;",
+        "func": "msg.url = \"http://127.0.0.1:1880/sensores/\" + msg.random +\"/\" + msg.randomHum;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
