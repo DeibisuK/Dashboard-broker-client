@@ -178,9 +178,7 @@
         "x": 610,
         "y": 40,
         "wires": [
-            [
-                "f0aea96056eda343"
-            ]
+            []
         ]
     },
     {
@@ -234,9 +232,7 @@
         "x": 600,
         "y": 120,
         "wires": [
-            [
-                "f0aea96056eda343"
-            ]
+            []
         ]
     },
     {
@@ -347,13 +343,10 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 820,
-        "y": 80,
+        "x": 920,
+        "y": 20,
         "wires": [
-            [
-                "a13f83267f08150b",
-                "137c88614269d155"
-            ]
+            []
         ]
     },
     {
@@ -426,9 +419,50 @@
         "y": 260,
         "wires": [
             [
-                "7af4b5b787f45efd",
-                "f0aea96056eda343"
+                "7af4b5b787f45efd"
             ]
+        ]
+    },
+    {
+        "id": "507135f4ef674ffd",
+        "type": "template",
+        "z": "4571324456ea2a51",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "This is the payload: {{payload}} !",
+        "output": "json",
+        "x": 820,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fd122ec9dfad4f10",
+        "type": "change",
+        "z": "4571324456ea2a51",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 380,
+        "wires": [
+            []
         ]
     }
 ]
