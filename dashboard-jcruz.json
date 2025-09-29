@@ -504,7 +504,8 @@
             [
                 "5962800357fe7a07",
                 "e701ee06c3ad9d48",
-                "b1a09da37aeba77d"
+                "b1a09da37aeba77d",
+                "45f9ef97649f68da"
             ]
         ]
     },
@@ -568,7 +569,7 @@
         "id": "06f704519b1fe2f4",
         "type": "ui-gauge",
         "z": "097713a283a7245f",
-        "name": "aaa",
+        "name": "temp",
         "group": "293f331604d8fd67",
         "order": 1,
         "value": "payload",
@@ -577,7 +578,7 @@
         "height": 3,
         "gtype": "gauge-half",
         "gstyle": "needle",
-        "title": "gauge",
+        "title": "Temperatura",
         "alwaysShowTitle": false,
         "floatingTitlePosition": "top-left",
         "units": "units",
@@ -605,7 +606,7 @@
             }
         ],
         "min": 0,
-        "max": 10,
+        "max": "100",
         "sizeThickness": 16,
         "sizeGap": 4,
         "sizeKeyThickness": 8,
@@ -613,7 +614,88 @@
         "styleGlow": false,
         "className": "",
         "x": 650,
-        "y": 440,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "45f9ef97649f68da",
+        "type": "change",
+        "z": "097713a283a7245f",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "req.params.hum",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 420,
+        "wires": [
+            [
+                "9f5f510e32af1134"
+            ]
+        ]
+    },
+    {
+        "id": "9f5f510e32af1134",
+        "type": "ui-gauge",
+        "z": "097713a283a7245f",
+        "name": "hum",
+        "group": "",
+        "order": 0,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Humedad",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 650,
+        "y": 460,
         "wires": [
             []
         ]
