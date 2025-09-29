@@ -404,7 +404,22 @@
         "rounded": true,
         "useThemeColors": true,
         "passthru": false,
-        "options": [],
+        "options": [
+            {
+                "label": "On",
+                "icon": "",
+                "value": "true",
+                "valueType": "bool",
+                "color": "#009933"
+            },
+            {
+                "label": "Off",
+                "icon": "",
+                "value": "false",
+                "valueType": "bool",
+                "color": "#999999"
+            }
+        ],
         "topic": "topic",
         "topicType": "msg",
         "x": 590,
