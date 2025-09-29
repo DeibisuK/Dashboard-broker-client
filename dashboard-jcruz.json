@@ -394,7 +394,7 @@
         "z": "4571324456ea2a51",
         "name": "",
         "topic": "dashboard",
-        "qos": "",
+        "qos": "0",
         "retain": "",
         "respTopic": "",
         "contentType": "",
