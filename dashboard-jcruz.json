@@ -135,7 +135,7 @@
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://127.0.0.1:1880/sensores/23/1.3",
+        "url": "",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -143,8 +143,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 530,
-        "y": 120,
+        "x": 750,
+        "y": 80,
         "wires": [
             [
                 "e701ee06c3ad9d48"
@@ -172,11 +172,12 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 150,
-        "y": 160,
+        "x": 130,
+        "y": 120,
         "wires": [
             [
-                "9fcfca3aefa5badb"
+                "9fcfca3aefa5badb",
+                "da5ce0b242f74fa8"
             ]
         ]
     },
@@ -393,32 +394,52 @@
         ]
     },
     {
-        "id": "9443335aba40a27b",
-        "type": "template",
-        "z": "097713a283a7245f",
-        "name": "",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "handlebars",
-        "syntax": "mustache",
-        "template": "This is the payload: {{payload}} !",
-        "output": "str",
-        "x": 400,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "9fcfca3aefa5badb",
         "type": "random",
         "z": "097713a283a7245f",
         "name": "",
         "low": 1,
         "high": 10,
+        "inte": "false",
+        "property": "randomHum",
+        "x": 320,
+        "y": 80,
+        "wires": [
+            [
+                "8242cb5e29d24478"
+            ]
+        ]
+    },
+    {
+        "id": "da5ce0b242f74fa8",
+        "type": "random",
+        "z": "097713a283a7245f",
+        "name": "",
+        "low": 1,
+        "high": 10,
         "inte": "true",
-        "property": "payload",
-        "x": 340,
+        "property": "randomTemp",
+        "x": 320,
+        "y": 140,
+        "wires": [
+            [
+                "8242cb5e29d24478"
+            ]
+        ]
+    },
+    {
+        "id": "8242cb5e29d24478",
+        "type": "function",
+        "z": "097713a283a7245f",
+        "name": "function 1",
+        "func": "msg.url = \"http://127.0.0.1/\" + msg.randomTemp+\"/\"+msg.randomHum;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
         "y": 80,
         "wires": [
             [
