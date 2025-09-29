@@ -546,7 +546,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "payload.req.params.temp",
+                "to": "req.params.temp",
                 "tot": "msg"
             }
         ],
