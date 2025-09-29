@@ -178,7 +178,9 @@
         "x": 610,
         "y": 40,
         "wires": [
-            []
+            [
+                "31ada91607bd5bca"
+            ]
         ]
     },
     {
@@ -232,7 +234,9 @@
         "x": 600,
         "y": 120,
         "wires": [
-            []
+            [
+                "31ada91607bd5bca"
+            ]
         ]
     },
     {
@@ -343,8 +347,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 920,
-        "y": 20,
+        "x": 880,
+        "y": 460,
         "wires": [
             []
         ]
@@ -363,8 +367,8 @@
         "correl": "",
         "expiry": "",
         "broker": "9682b326129ee7e2",
-        "x": 950,
-        "y": 300,
+        "x": 1030,
+        "y": 120,
         "wires": []
     },
     {
@@ -434,8 +438,8 @@
         "syntax": "mustache",
         "template": "This is the payload: {{payload}} !",
         "output": "json",
-        "x": 820,
-        "y": 160,
+        "x": 920,
+        "y": 280,
         "wires": [
             []
         ]
@@ -463,6 +467,31 @@
         "y": 380,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "31ada91607bd5bca",
+        "type": "join",
+        "z": "4571324456ea2a51",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": "false",
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "x": 790,
+        "y": 80,
+        "wires": [
+            [
+                "a13f83267f08150b"
+            ]
         ]
     }
 ]
