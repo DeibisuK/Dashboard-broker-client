@@ -627,7 +627,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "payload",
+                "p": "we",
                 "pt": "msg",
                 "to": "req.params.hum",
                 "tot": "str"
@@ -638,7 +638,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 380,
+        "x": 370,
         "y": 420,
         "wires": [
             [
@@ -653,7 +653,7 @@
         "name": "hum",
         "group": "293f331604d8fd67",
         "order": 1,
-        "value": "payload",
+        "value": "we",
         "valueType": "msg",
         "width": 3,
         "height": 3,
