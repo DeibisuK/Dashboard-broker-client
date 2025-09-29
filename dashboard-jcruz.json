@@ -403,7 +403,7 @@
         "className": "",
         "rounded": true,
         "useThemeColors": true,
-        "passthru": false,
+        "passthru": true,
         "options": [
             {
                 "label": "On",
