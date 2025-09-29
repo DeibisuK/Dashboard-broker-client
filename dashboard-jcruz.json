@@ -393,7 +393,7 @@
         "z": "4571324456ea2a51",
         "name": "",
         "topic": "dashboard",
-        "qos": "0",
+        "qos": "",
         "retain": "",
         "respTopic": "",
         "contentType": "",
