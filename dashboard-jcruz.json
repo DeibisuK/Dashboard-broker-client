@@ -404,7 +404,7 @@
         "name": "",
         "label": "switch",
         "group": "293f331604d8fd67",
-        "order": 0,
+        "order": 1,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -503,7 +503,8 @@
         "wires": [
             [
                 "5962800357fe7a07",
-                "e701ee06c3ad9d48"
+                "e701ee06c3ad9d48",
+                "b1a09da37aeba77d"
             ]
         ]
     },
@@ -531,8 +532,35 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 600,
-        "y": 160,
+        "x": 780,
+        "y": 340,
         "wires": []
+    },
+    {
+        "id": "b1a09da37aeba77d",
+        "type": "change",
+        "z": "097713a283a7245f",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.req.params.temp",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 360,
+        "wires": [
+            [
+                "e701ee06c3ad9d48"
+            ]
+        ]
     }
 ]
