@@ -372,7 +372,7 @@
         "type": "function",
         "z": "4571324456ea2a51",
         "name": "function 1",
-        "func": "msg.payload = {\n    temp: msg.temp,\n    hum: msg.hum\n};\n\nreturn msg;",
+        "func": "msg.payload = {\n    temp: msg.temp,\n    hum: msg.hum\n};\n\nreturn msg.payload;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
