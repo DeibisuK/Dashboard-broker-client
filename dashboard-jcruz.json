@@ -8,53 +8,292 @@
         "env": []
     },
     {
-        "id": "7c5a433230f1c8d0",
-        "type": "mqtt in",
+        "id": "ec5caf0b746d7170",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": true
+    },
+    {
+        "id": "aade62f79cd52ed5",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "15ba7213a31d42c5",
+        "type": "ui-page",
+        "name": "Page 1",
+        "ui": "ec5caf0b746d7170",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "aade62f79cd52ed5",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 3
+            },
+            {
+                "name": "Tablet",
+                "px": 576,
+                "cols": 6
+            },
+            {
+                "name": "Small Desktop",
+                "px": 768,
+                "cols": 9
+            },
+            {
+                "name": "Desktop",
+                "px": 1024,
+                "cols": 12
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "293f331604d8fd67",
+        "type": "ui-group",
+        "name": "Group 1",
+        "page": "15ba7213a31d42c5",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "f5b2400802f5beae",
+        "type": "ui-gauge",
         "z": "4571324456ea2a51",
         "name": "",
-        "topic": "",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 290,
-        "y": 200,
+        "group": "293f331604d8fd67",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "gauge",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "color": "#5CD65C",
+                "from": 0
+            },
+            {
+                "color": "#FFC800",
+                "from": 4
+            },
+            {
+                "color": "#EA5353",
+                "from": 7
+            }
+        ],
+        "min": 0,
+        "max": 10,
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 330,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8894602de64eb8ab",
+        "type": "ui-gauge",
+        "z": "4571324456ea2a51",
+        "name": "",
+        "group": "293f331604d8fd67",
+        "order": 0,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "gauge",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": 10,
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 330,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cbc9d5167772d850",
+        "type": "ui-switch",
+        "z": "4571324456ea2a51",
+        "name": "",
+        "label": "switch",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": true,
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": false,
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 330,
+        "y": 320,
         "wires": [
             [
-                "e538aa10e75f54cf"
+                "7af4b5b787f45efd"
             ]
         ]
     },
     {
-        "id": "e538aa10e75f54cf",
-        "type": "mqtt out",
+        "id": "7af4b5b787f45efd",
+        "type": "ui-led",
         "z": "4571324456ea2a51",
         "name": "",
-        "topic": "",
-        "qos": "",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "x": 590,
-        "y": 160,
+        "order": -1,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "states": [
+            {
+                "color": "#FF0000",
+                "value": false,
+                "valueType": "bool"
+            },
+            {
+                "color": "#00FF00",
+                "value": true,
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showBorder": true,
+        "showGlow": true,
+        "x": 610,
+        "y": 340,
         "wires": []
     },
     {
-        "id": "c82e74011fc24e86",
-        "type": "catch",
+        "id": "385c1b87c52b2f27",
+        "type": "random",
         "z": "4571324456ea2a51",
         "name": "",
-        "scope": null,
-        "uncaught": false,
-        "x": 520,
-        "y": 340,
+        "low": 1,
+        "high": 10,
+        "inte": "true",
+        "property": "payload",
+        "x": 120,
+        "y": 160,
         "wires": [
-            []
+            [
+                "f5b2400802f5beae"
+            ]
+        ]
+    },
+    {
+        "id": "62fc15d9efe27e88",
+        "type": "random",
+        "z": "4571324456ea2a51",
+        "name": "",
+        "low": "0",
+        "high": 10,
+        "inte": "true",
+        "property": "payload",
+        "x": 120,
+        "y": 240,
+        "wires": [
+            [
+                "8894602de64eb8ab"
+            ]
         ]
     }
 ]
