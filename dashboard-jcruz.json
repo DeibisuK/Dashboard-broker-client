@@ -141,7 +141,7 @@
         "z": "4571324456ea2a51",
         "name": "Temperatura",
         "group": "293f331604d8fd67",
-        "order": 4,
+        "order": 5,
         "value": "temp",
         "valueType": "msg",
         "width": 3,
@@ -197,7 +197,7 @@
         "z": "4571324456ea2a51",
         "name": "Humedad",
         "group": "293f331604d8fd67",
-        "order": 3,
+        "order": 4,
         "value": "hum",
         "valueType": "msg",
         "width": 3,
@@ -253,7 +253,7 @@
         "z": "4571324456ea2a51",
         "name": "led",
         "group": "293f331604d8fd67",
-        "order": 2,
+        "order": 3,
         "width": 0,
         "height": 0,
         "label": "LED",
@@ -404,7 +404,7 @@
         "name": "",
         "label": "switch",
         "group": "293f331604d8fd67",
-        "order": 1,
+        "order": 2,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -559,8 +559,63 @@
         "y": 360,
         "wires": [
             [
-                "e701ee06c3ad9d48"
+                "e701ee06c3ad9d48",
+                "06f704519b1fe2f4"
             ]
+        ]
+    },
+    {
+        "id": "06f704519b1fe2f4",
+        "type": "ui-gauge",
+        "z": "097713a283a7245f",
+        "name": "aaa",
+        "group": "293f331604d8fd67",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "gauge",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": 10,
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 650,
+        "y": 440,
+        "wires": [
+            []
         ]
     }
 ]
