@@ -398,7 +398,7 @@
         "low": "0",
         "high": "100",
         "inte": "false",
-        "property": "payload.hum",
+        "property": "hum",
         "x": 320,
         "y": 80,
         "wires": [
@@ -415,7 +415,7 @@
         "low": "0",
         "high": "100",
         "inte": "false",
-        "property": "payload.temp",
+        "property": "temp",
         "x": 320,
         "y": 140,
         "wires": [
@@ -429,7 +429,7 @@
         "type": "function",
         "z": "097713a283a7245f",
         "name": "function 1",
-        "func": "msg.url = \"http://127.0.0.1:1880/sensores/\" + msg.payload.temp +\"/\" + msg.payload.hum;\nreturn msg;",
+        "func": "msg.url = \"http://127.0.0.1:1880/sensores/\" + msg.temp +\"/\" + msg.hum;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
