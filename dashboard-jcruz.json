@@ -8,6 +8,14 @@
         "env": []
     },
     {
+        "id": "097713a283a7245f",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "ec5caf0b746d7170",
         "type": "ui-base",
         "name": "My Dashboard",
@@ -465,5 +473,74 @@
                 "f0aea96056eda343"
             ]
         ]
+    },
+    {
+        "id": "96d52f54993e2158",
+        "type": "http request",
+        "z": "097713a283a7245f",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://example.com",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 410,
+        "y": 160,
+        "wires": [
+            [
+                "5d392b6966a9cfe1"
+            ]
+        ]
+    },
+    {
+        "id": "6002f2700e0cc4fe",
+        "type": "inject",
+        "z": "097713a283a7245f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 160,
+        "wires": [
+            [
+                "96d52f54993e2158"
+            ]
+        ]
+    },
+    {
+        "id": "5d392b6966a9cfe1",
+        "type": "debug",
+        "z": "097713a283a7245f",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 140,
+        "wires": []
     }
 ]
