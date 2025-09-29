@@ -398,48 +398,6 @@
         "wires": []
     },
     {
-        "id": "507135f4ef674ffd",
-        "type": "template",
-        "z": "4571324456ea2a51",
-        "name": "",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "handlebars",
-        "syntax": "mustache",
-        "template": "This is the payload: {{payload}} !",
-        "output": "json",
-        "x": 920,
-        "y": 280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "fd122ec9dfad4f10",
-        "type": "change",
-        "z": "4571324456ea2a51",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 280,
-        "y": 380,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "170a5399bbd09e46",
         "type": "ui-switch",
         "z": "4571324456ea2a51",
@@ -544,6 +502,52 @@
         "statusType": "auto",
         "x": 640,
         "y": 140,
+        "wires": []
+    },
+    {
+        "id": "61bb85fa6c4314cc",
+        "type": "http in",
+        "z": "097713a283a7245f",
+        "name": "",
+        "url": "sensores/:temp/:hum",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 230,
+        "y": 260,
+        "wires": [
+            [
+                "5962800357fe7a07",
+                "e701ee06c3ad9d48"
+            ]
+        ]
+    },
+    {
+        "id": "5962800357fe7a07",
+        "type": "http response",
+        "z": "097713a283a7245f",
+        "name": "",
+        "statusCode": "202",
+        "headers": {},
+        "x": 560,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "e701ee06c3ad9d48",
+        "type": "debug",
+        "z": "097713a283a7245f",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 320,
         "wires": []
     }
 ]
