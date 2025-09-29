@@ -361,19 +361,19 @@
         "segments": [
             {
                 "from": "0",
-                "color": "#5cd65c",
+                "color": "#ea5353",
                 "text": "",
                 "textType": "label"
             },
             {
-                "from": "55",
+                "from": "31",
                 "color": "#ffc800",
                 "text": "",
                 "textType": "label"
             },
             {
-                "from": "79",
-                "color": "#ea5353",
+                "from": "71",
+                "color": "#5cd65c",
                 "text": "",
                 "textType": "label"
             }
