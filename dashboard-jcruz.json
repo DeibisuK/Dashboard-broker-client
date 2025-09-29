@@ -103,7 +103,7 @@
         "name": "Temperatura",
         "group": "293f331604d8fd67",
         "order": 2,
-        "value": "payload",
+        "value": "temp",
         "valueType": "msg",
         "width": 3,
         "height": 3,
@@ -147,7 +147,9 @@
         "x": 610,
         "y": 40,
         "wires": [
-            []
+            [
+                "f0aea96056eda343"
+            ]
         ]
     },
     {
@@ -157,7 +159,7 @@
         "name": "Humedad",
         "group": "293f331604d8fd67",
         "order": 1,
-        "value": "payload",
+        "value": "hum",
         "valueType": "msg",
         "width": 3,
         "height": 3,
@@ -201,7 +203,9 @@
         "x": 600,
         "y": 120,
         "wires": [
-            []
+            [
+                "f0aea96056eda343"
+            ]
         ]
     },
     {
@@ -331,5 +335,42 @@
                 "62fc15d9efe27e88"
             ]
         ]
+    },
+    {
+        "id": "f0aea96056eda343",
+        "type": "function",
+        "z": "4571324456ea2a51",
+        "name": "function 1",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 80,
+        "wires": [
+            [
+                "a13f83267f08150b"
+            ]
+        ]
+    },
+    {
+        "id": "a13f83267f08150b",
+        "type": "mqtt out",
+        "z": "4571324456ea2a51",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "x": 950,
+        "y": 80,
+        "wires": []
     }
 ]
