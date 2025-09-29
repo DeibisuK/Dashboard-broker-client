@@ -441,9 +441,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "dashboard",
-        "payload": "{}",
+        "payload": "{\"a\":1}",
         "payloadType": "json",
-        "x": 730,
+        "x": 740,
         "y": 280,
         "wires": [
             [
