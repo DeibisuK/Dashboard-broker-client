@@ -179,7 +179,7 @@
         "y": 40,
         "wires": [
             [
-                "31ada91607bd5bca"
+                "f0aea96056eda343"
             ]
         ]
     },
@@ -235,7 +235,7 @@
         "y": 120,
         "wires": [
             [
-                "31ada91607bd5bca"
+                "f0aea96056eda343"
             ]
         ]
     },
@@ -267,8 +267,8 @@
         "shape": "circle",
         "showBorder": true,
         "showGlow": true,
-        "x": 610,
-        "y": 340,
+        "x": 730,
+        "y": 300,
         "wires": []
     },
     {
@@ -347,10 +347,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 880,
-        "y": 460,
+        "x": 820,
+        "y": 100,
         "wires": [
-            []
+            [
+                "137c88614269d155"
+            ]
         ]
     },
     {
@@ -430,31 +432,6 @@
         ]
     },
     {
-        "id": "31ada91607bd5bca",
-        "type": "join",
-        "z": "4571324456ea2a51",
-        "name": "",
-        "mode": "auto",
-        "build": "object",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\\n",
-        "joinerType": "str",
-        "useparts": false,
-        "accumulate": "false",
-        "timeout": "",
-        "count": "",
-        "reduceRight": false,
-        "x": 790,
-        "y": 80,
-        "wires": [
-            [
-                "a13f83267f08150b"
-            ]
-        ]
-    },
-    {
         "id": "170a5399bbd09e46",
         "type": "ui-switch",
         "z": "4571324456ea2a51",
@@ -484,7 +461,8 @@
         "y": 200,
         "wires": [
             [
-                "7af4b5b787f45efd"
+                "7af4b5b787f45efd",
+                "f0aea96056eda343"
             ]
         ]
     }
