@@ -133,7 +133,7 @@
         "z": "4571324456ea2a51",
         "name": "Temperatura",
         "group": "293f331604d8fd67",
-        "order": 3,
+        "order": 4,
         "value": "temp",
         "valueType": "msg",
         "width": 3,
@@ -189,7 +189,7 @@
         "z": "4571324456ea2a51",
         "name": "Humedad",
         "group": "293f331604d8fd67",
-        "order": 2,
+        "order": 3,
         "value": "hum",
         "valueType": "msg",
         "width": 3,
@@ -245,7 +245,7 @@
         "z": "4571324456ea2a51",
         "name": "led",
         "group": "293f331604d8fd67",
-        "order": 1,
+        "order": 2,
         "width": 0,
         "height": 0,
         "label": "LED",
@@ -388,46 +388,6 @@
         "wires": []
     },
     {
-        "id": "cf356d8663b1f614",
-        "type": "ui-button-group",
-        "z": "4571324456ea2a51",
-        "name": "Led",
-        "group": "293f331604d8fd67",
-        "order": 0,
-        "width": 6,
-        "height": 1,
-        "label": "button group",
-        "className": "",
-        "rounded": true,
-        "useThemeColors": true,
-        "passthru": true,
-        "options": [
-            {
-                "label": "On",
-                "icon": "",
-                "value": "true",
-                "valueType": "bool",
-                "color": "#009933"
-            },
-            {
-                "label": "Off",
-                "icon": "",
-                "value": "false",
-                "valueType": "bool",
-                "color": "#999999"
-            }
-        ],
-        "topic": "led",
-        "topicType": "msg",
-        "x": 590,
-        "y": 260,
-        "wires": [
-            [
-                "7af4b5b787f45efd"
-            ]
-        ]
-    },
-    {
         "id": "507135f4ef674ffd",
         "type": "template",
         "z": "4571324456ea2a51",
@@ -491,6 +451,40 @@
         "wires": [
             [
                 "a13f83267f08150b"
+            ]
+        ]
+    },
+    {
+        "id": "170a5399bbd09e46",
+        "type": "ui-switch",
+        "z": "4571324456ea2a51",
+        "name": "",
+        "label": "switch",
+        "group": "293f331604d8fd67",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 570,
+        "y": 200,
+        "wires": [
+            [
+                "7af4b5b787f45efd"
             ]
         ]
     }
