@@ -280,7 +280,7 @@
         "low": "0",
         "high": "100",
         "inte": "false",
-        "property": "payload",
+        "property": "temp",
         "x": 380,
         "y": 40,
         "wires": [
@@ -297,7 +297,7 @@
         "low": "0",
         "high": "100",
         "inte": "true",
-        "property": "payload",
+        "property": "hum",
         "x": 380,
         "y": 120,
         "wires": [
