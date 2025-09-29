@@ -112,7 +112,7 @@
         "birthTopic": "",
         "birthQos": "0",
         "birthRetain": "false",
-        "birthPayload": "dasboard",
+        "birthPayload": "",
         "birthMsg": {},
         "closeTopic": "",
         "closeQos": "0",
