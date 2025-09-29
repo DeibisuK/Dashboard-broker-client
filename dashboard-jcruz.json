@@ -100,57 +100,9 @@
         "id": "f5b2400802f5beae",
         "type": "ui-gauge",
         "z": "4571324456ea2a51",
-        "name": "",
+        "name": "Temperatura",
         "group": "293f331604d8fd67",
-        "order": 1,
-        "value": "payload",
-        "valueType": "msg",
-        "width": 3,
-        "height": 3,
-        "gtype": "gauge-half",
-        "gstyle": "needle",
-        "title": "gauge",
-        "alwaysShowTitle": false,
-        "floatingTitlePosition": "top-left",
-        "units": "units",
-        "icon": "",
-        "prefix": "",
-        "suffix": "",
-        "segments": [
-            {
-                "color": "#5CD65C",
-                "from": 0
-            },
-            {
-                "color": "#FFC800",
-                "from": 4
-            },
-            {
-                "color": "#EA5353",
-                "from": 7
-            }
-        ],
-        "min": 0,
-        "max": 10,
-        "sizeThickness": 16,
-        "sizeGap": 4,
-        "sizeKeyThickness": 8,
-        "styleRounded": true,
-        "styleGlow": false,
-        "className": "",
-        "x": 330,
-        "y": 160,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "8894602de64eb8ab",
-        "type": "ui-gauge",
-        "z": "4571324456ea2a51",
-        "name": "",
-        "group": "293f331604d8fd67",
-        "order": 0,
+        "order": 2,
         "value": "payload",
         "valueType": "msg",
         "width": 3,
@@ -192,8 +144,62 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 330,
-        "y": 240,
+        "x": 610,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8894602de64eb8ab",
+        "type": "ui-gauge",
+        "z": "4571324456ea2a51",
+        "name": "Humedad",
+        "group": "293f331604d8fd67",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "gauge",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": 10,
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 600,
+        "y": 120,
         "wires": [
             []
         ]
@@ -271,8 +277,8 @@
         "high": 10,
         "inte": "true",
         "property": "payload",
-        "x": 120,
-        "y": 160,
+        "x": 380,
+        "y": 40,
         "wires": [
             [
                 "f5b2400802f5beae"
@@ -288,11 +294,41 @@
         "high": 10,
         "inte": "true",
         "property": "payload",
-        "x": 120,
-        "y": 240,
+        "x": 380,
+        "y": 120,
         "wires": [
             [
                 "8894602de64eb8ab"
+            ]
+        ]
+    },
+    {
+        "id": "da1672f09408a4cf",
+        "type": "inject",
+        "z": "4571324456ea2a51",
+        "name": "Start",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 80,
+        "wires": [
+            [
+                "385c1b87c52b2f27",
+                "62fc15d9efe27e88"
             ]
         ]
     }
