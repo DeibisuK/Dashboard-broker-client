@@ -8,6 +8,37 @@
         "env": []
     },
     {
+        "id": "9682b326129ee7e2",
+        "type": "mqtt-broker",
+        "name": "LocalHost",
+        "broker": "127.0.0.1",
+        "port": "1884",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
         "id": "ec5caf0b746d7170",
         "type": "ui-base",
         "name": "My Dashboard",
@@ -26,25 +57,6 @@
         "notificationDisplayTime": 1,
         "showDisconnectNotification": true,
         "allowInstall": true
-    },
-    {
-        "id": "aade62f79cd52ed5",
-        "type": "ui-theme",
-        "name": "Default Theme",
-        "colors": {
-            "surface": "#ffffff",
-            "primary": "#0094CE",
-            "bgPage": "#eeeeee",
-            "groupBg": "#ffffff",
-            "groupOutline": "#cccccc"
-        },
-        "sizes": {
-            "density": "default",
-            "pagePadding": "12px",
-            "groupGap": "12px",
-            "groupBorderRadius": "4px",
-            "widgetGap": "12px"
-        }
     },
     {
         "id": "15ba7213a31d42c5",
@@ -97,35 +109,23 @@
         "groupType": "default"
     },
     {
-        "id": "9682b326129ee7e2",
-        "type": "mqtt-broker",
-        "name": "LocalHost",
-        "broker": "127.0.0.1",
-        "port": "1884",
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": false,
-        "protocolVersion": 4,
-        "keepalive": 60,
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthRetain": "false",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closeRetain": "false",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willRetain": "false",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
+        "id": "aade62f79cd52ed5",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
     },
     {
         "id": "96d52f54993e2158",
@@ -225,7 +225,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 780,
-        "y": 340,
+        "y": 300,
         "wires": []
     },
     {
@@ -279,6 +279,26 @@
         "wires": [
             [
                 "9f5f510e32af1134"
+            ]
+        ]
+    },
+    {
+        "id": "8242cb5e29d24478",
+        "type": "function",
+        "z": "097713a283a7245f",
+        "name": "function 1",
+        "func": "msg.url = \"http://127.0.0.1:1880/sensores/\" + msg.temp +\"/\" + msg.hum;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 60,
+        "wires": [
+            [
+                "96d52f54993e2158"
             ]
         ]
     },
@@ -421,26 +441,6 @@
         "wires": [
             [
                 "8242cb5e29d24478"
-            ]
-        ]
-    },
-    {
-        "id": "8242cb5e29d24478",
-        "type": "function",
-        "z": "097713a283a7245f",
-        "name": "function 1",
-        "func": "msg.url = \"http://127.0.0.1:1880/sensores/\" + msg.temp +\"/\" + msg.hum;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 520,
-        "y": 60,
-        "wires": [
-            [
-                "96d52f54993e2158"
             ]
         ]
     }
